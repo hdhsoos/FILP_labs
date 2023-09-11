@@ -1,2 +1,5 @@
 (defun UF1 (x) (+ (tan (/ x 8)) (atan (/ x 8))))
 (defun UF2 (x) (* (log (+ x 4)) (log (+ x 4))))
+(defun START () (print '(enter number)) (setq n (read))
+(set 'UFR (LIST (UF1 n) (UF2 n))) (set 'X1 (reverse UFR))
+(set 'X2 (length UFR)) (set 'X3 (+ (first UFR)(second UFR)))(print UFR))
